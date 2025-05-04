@@ -501,10 +501,18 @@ tile_map_data = PackedByteArray("AAD8////AAABAAAAAAD8/wAAAAABAAEAAAD8/wEAAAABAAI
 tile_set = SubResource("TileSet_3jppy")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(0, -8)
+position = Vector2(0, -27)
 zoom = Vector2(3, 3)
 process_callback = 0
+limit_left = -190
+limit_bottom = 115
 position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_top_margin = 0.48
+drag_bottom_margin = 0.4
+editor_draw_limits = true
+editor_draw_drag_margin = true
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_5d20u")]
 position = Vector2(0, -8)
